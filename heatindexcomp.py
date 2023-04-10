@@ -1,3 +1,5 @@
+from readdata import read_data
+
 #Column names and column indices
 columns = {'date': 0, 'time': 1, 'tempout': 2, 'humout': 5, 'heatindex': 13}
 
@@ -33,7 +35,7 @@ def compute_heatindex(t, hum):
     a = -42.379
     b = 2.04901523
     c = 10.14333127
-    d = 0.22475541
+    d = -0.22475541
     e = -0.00683783
     f = -0.05481717
     g = 0.00122874
